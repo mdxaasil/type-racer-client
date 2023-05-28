@@ -18,9 +18,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16
-
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        
+      - name: Install dependencies v2
+        run: npm i
 
       - name: Build project
         run: npm run dev
